@@ -1,0 +1,23 @@
+{
+    "name": "foreverglory/auto-reply",
+    "type": "library",
+    "description": "auto reply",
+    "keywords": ["auto", "reply"],
+    "homepage": "http://github.foreverglory.me",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ForeverGlory",
+            "email": "foreverglory@qq.com",
+            "homepage": "http://foreverglory.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {"Glory\\AutoReply": ""}
+    },
+    "target-dir": "Glory/AutoReply"
+}
