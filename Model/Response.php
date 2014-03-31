@@ -12,13 +12,9 @@ abstract class Response implements ResponseInterface {
 
     protected $variables;
 
-    public function addVariable(Variable $variable) {
+    public function addVariable($variable) {
         $this->variables[] = $variable;
         return $this;
-    }
-
-    public function removeVariables() {
-        
     }
 
     public function setVariables($variables) {

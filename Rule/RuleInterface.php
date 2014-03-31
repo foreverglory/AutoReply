@@ -7,13 +7,13 @@ namespace Glory\AutoReply\Rule;
  * @author ForeverGlory
  */
 interface RuleInterface {
-    
+
     public function getRequestType();
-    
+
     public function addCondition($condition);
-    
+
     public function setConditions($conditions);
-    
+
     public function getConditions();
 
     public function setStatus($status);

@@ -8,4 +8,10 @@ namespace Glory\AutoReply\Response;
 interface ResponseInterface {
 
     public function getResult();
+
+    public function addVariable($variable);
+
+    public function setVariables($variables);
+
+    public function getVariables();
 }

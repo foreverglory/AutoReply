@@ -60,7 +60,7 @@ abstract class Rule implements RuleInterface {
      * @param boolean $status
      * @return \Glory\AutoReply\Rule\Rule
      */
-    public function setStatus(boolean $status) {
+    public function setStatus($status) {
         $this->status = $status;
         return $this;
     }
