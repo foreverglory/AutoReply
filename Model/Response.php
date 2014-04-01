@@ -3,7 +3,6 @@
 namespace Glory\AutoReply\Model;
 
 use Glory\AutoReply\Response\ResponseInterface;
-use Glory\AutoReply\Model\Variable;
 
 /**
  * @author ForeverGlory
