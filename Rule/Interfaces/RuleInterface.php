@@ -1,11 +1,11 @@
 <?php
 
-namespace Glory\AutoReply\Rule;
-
 /**
- * 自动回复规则
  * @author ForeverGlory
  */
+
+namespace Glory\AutoReply\Rule\Interfaces;
+
 interface RuleInterface {
 
     public function getRequestType();
@@ -24,13 +24,13 @@ interface RuleInterface {
 
     public function getSort();
 
-    public function setRequest(\Glory\AutoReply\Request\RequestInterface $request);
+    public function setRequest(\Glory\AutoReply\Request\Interfaces\RequestInterface $request);
 
     public function getRequest();
 
     public function validate();
 
-    public function setResponse(\Glory\AutoReply\Response\ResponseInterface $response);
+    public function setResponse(\Glory\AutoReply\Response\Interfaces\ResponseInterface $response);
 
     public function getResponse();
 }

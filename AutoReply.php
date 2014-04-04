@@ -1,14 +1,15 @@
 <?php
 
+/**
+ * @author ForeverGlory
+ */
+
 namespace Glory\AutoReply;
 
 use Glory\AutoReply\Request\RequestInterface;
 use Glory\AutoReply\Response\ResponseInterface;
 use Glory\AutoReply\Rule\RuleInterface;
 
-/**
- * @author ForeverGlory
- */
 class AutoReply {
 
     /**

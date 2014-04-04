@@ -9,7 +9,7 @@ use Glory\AutoReply\Rule\RuleInterface;
 /**
  * @author ForeverGlory
  */
-abstract class Rule implements RuleInterface {
+abstract class AbstractRule implements RuleInterface {
 
     protected $conditions = array();
     protected $content;
