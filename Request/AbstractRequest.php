@@ -1,28 +1,39 @@
 <?php
 
+/**
+ * 自动回复 之 请求
+ * @author ForeverGlory
+ */
+
 namespace Glory\AutoReply\Request;
 
 use Glory\AutoReply\Request\RequestInterface;
 
-/**
- * @author ForeverGlory
- */
 abstract class AbstractRequest implements RequestInterface {
 
-    protected $content;
-    protected $create_time;
+    protected $variables;
 
-    public function __construct() {
-        
-    }
-
-    public function setCreateTime(\DateTime $create_time) {
-        $this->create_time = $create_time;
+    public function addVariable($key, $val) {
+        $this->variables[$key] = $val;
         return $this;
     }
 
-    public function getCreateTime() {
-        return $this->create_time;
+    public function getVariable($key, $default) {
+        return array_key_exists($key, $this->variables) ? $this->variables[$key] : $default;
+    }
+
+    public function removeVariable($key) {
+        unset($this->variables[$key]);
+        return $this;
+    }
+
+    public function setVariables($variables) {
+        $this->variables = $variables;
+        return $this;
+    }
+
+    public function getVariables() {
+        return $this->variables;
     }
 
 }

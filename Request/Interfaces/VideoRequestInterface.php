@@ -1,10 +1,12 @@
 <?php
 
-namespace Glory\AutoReply\Request;
-
 /**
+ * 视频请求
  * @author ForeverGlory
  */
+
+namespace Glory\AutoReply\Request\Interfaces;
+
 interface VideoRequestInterface extends RequestInterface {
 
     public function setVideo($video);

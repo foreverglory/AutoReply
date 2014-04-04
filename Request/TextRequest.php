@@ -1,36 +1,33 @@
 <?php
 
-namespace Glory\AutoReply\Request;
-
-use Glory\AutoReply\Request\RequestInterface;
-use Glory\AutoReply\Request\AbstractRequest;
-
-
-
 /**
  * @author ForeverGlory
  */
-class TextRequest extends AbstractRequest {
 
-    protected $model;
+namespace Glory\AutoReply\Request;
+
+use Glory\AutoReply\Request\Interfaces\TextRequestInterface;
+use Glory\AutoReply\Request\AbstractRequest;
+
+class TextRequest extends AbstractRequest implements TextRequestInterface {
+
+    protected $text;
 
     public function getType() {
         return RequestInterface::Text;
     }
 
-    /**
-     * 获取请求结果
-     */
-    public function getResult() {
-        ;
+    public function setText($text) {
+        $this->text = $text;
+        return $this;
     }
 
-    public function getContent() {
-        
+    public function getText() {
+        return $this->text;
     }
 
-    public function setContent(Content\ContentInterface $content) {
-        
+    public function getSource() {
+        return $this->getText();
     }
 
 }
