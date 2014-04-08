@@ -14,6 +14,7 @@ class TextRequest extends AbstractRequest implements TextRequestInterface {
     protected $text;
 
     public function getType() {
+        \Symfony\Component\HttpKernel\HttpKernelInterface::MASTER_REQUEST;
         return RequestInterface::Text;
     }
 

@@ -14,6 +14,6 @@ interface MatchInterface {
     public function setPattern($pattern);
 
     public function validate();
-    
+
     public function matches();
 }

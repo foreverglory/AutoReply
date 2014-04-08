@@ -109,7 +109,7 @@ class AutoReply {
      */
     public function validate() {
         foreach ($this->getRules() as $rule) {
-            $valiDate = new Validate($this->getRequest(), $rule);
+            $valiDate = new AutoReplyCheck($this->getRequest(), $rule);
             if ($valiDate->validate()) {
                 $this->setResponse($valiDate->getResponse());
                 return true;

@@ -7,7 +7,7 @@
 
 namespace Glory\AutoReply\Request\Interfaces;
 
-interface ImageRequestInterface extends RequestInterface {
+interface ImageRequestInterface extends MediaRequestInterface {
 
     public function setImage($image);
 

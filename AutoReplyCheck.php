@@ -10,7 +10,7 @@ use Glory\AutoReply\Rule\RuleInterface;
  * 认证自动回复
  * @author ForeverGlory
  */
-class Validate {
+class AutoReplyCheck {
 
     /**
      * @var RequestInterface

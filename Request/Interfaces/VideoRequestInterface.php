@@ -7,7 +7,7 @@
 
 namespace Glory\AutoReply\Request\Interfaces;
 
-interface VideoRequestInterface extends RequestInterface {
+interface VideoRequestInterface extends ImageRequestInterface, VoiceRequestInterface {
 
     public function setVideo($video);
 

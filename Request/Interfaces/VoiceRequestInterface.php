@@ -7,7 +7,7 @@
 
 namespace Glory\AutoReply\Request\Interfaces;
 
-interface VoiceRequestInterface extends RequestInterface {
+interface VoiceRequestInterface extends TextRequestInterface, MediaRequestInterface {
 
     public function setVoice($voice);
 
